@@ -8,9 +8,9 @@ UPLOADNAME=uploadtar
 HOST=localhost #Хост MySQL
 USER=user #Имя пользователя базы данных
 PASSWD=password123  #Пароль от базы данных
-DATADIR='/home/d/dnkayu8j/backups'  #Путь к каталогу где будут храниться резервные копии
-SRCFILES='/home/d/dnkayu8j/mebelev.net/public_html/'  #Путь к каталогу файлов для архивирования
-UPLOADDIR='/home/d/dnkayu8j/mebelev.net/public_html/upload'
+DATADIR='/home/user/backups'  #Путь к каталогу где будут храниться резервные копии
+SRCFILES='/home/user/public_html/'  #Путь к каталогу файлов для архивирования
+UPLOADDIR='/home/user/public_html/upload'
 PREFIX=`date +%F` #Префикс по дате для структурирования резервных копий
 
 #start backup
