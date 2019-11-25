@@ -32,6 +32,10 @@ echo "[++--------][`date +%F--%H-%M`] Aborted. Generate database backup failed."
 # exit 1
 fi
 echo "[++++------][`date +%F--%H-%M`] Backup database [$DBNAME] - successfull."
+tar -czpf $DATADIR/$PREFIX/$DBFILENAME-`date +%F--%H-%M`.sql.tar.gz $DATADIR/$PREFIX/$DBFILENAME-`date +%F--%H-%M`.sql
+if [[ $? -eq 0 ]];then
+rm -rf $DATADIR/$PREFIX/$DBFILENAME-`date +%F--%H-%M`.sql
+fi
 echo "[++++++----][`date +%F--%H-%M`] Copy the source code project [$PROJNAME]..."
 #Src dump
 cd $SRCFILES/..
